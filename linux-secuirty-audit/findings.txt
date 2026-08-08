@@ -1,0 +1,30 @@
+LINUX SECURITY AUDIT
+====================
+
+System:
+gta
+
+Date:
+August 8, 2026
+
+Open Ports:
+546/UDP (NetworkManager DHCPv6 Client)
+
+Findings:
+1. UDP 546 (NetworkManager / DHCPv6 Client)
+   Risk: Low
+   Reason: Bound strictly to the IPv6 link-local address [fe80::a00:27ff:fea2:6cee]%eth0. It is not exposed to external networks or the internet and cannot be routed past local layer-2 network boundaries.
+
+2. ModemManager.service
+   Risk: Low
+   Reason: Active background service designed for cellular/WWAN hardware management. Unnecessary inside a virtual machine environment without dedicated cellular modems.
+
+Firewall:
+UFW status is inactive. The nftables ruleset is empty. No packet filtering or traffic restrictions are currently active on the host.
+
+Recommendations:
+- Disable unnecessary services: Stop and disable unused daemons such as ModemManager.service using `sudo systemctl disable --now ModemManager.service`.
+- Restrict unnecessary network exposure: Disable IPv6 on eth0 if not explicitly required by modifying NetworkManager configuration (`sudo nmcli connection modify "eth0" ipv6.method ignore`).
+- Use firewall rules to limit access: Enable UFW with a default incoming deny policy using `sudo ufw default deny incoming` and `sudo ufw enable`.
+- Harden remote administration services: Ensure default open remote access ports (e.g., SSH/22) remain closed or restricted via key-based authentication if installed later.
+
