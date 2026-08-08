@@ -1,0 +1,8 @@
+# Nmap 7.99 scan initiated Sat Aug  8 17:26:58 2026 as: /usr/lib/nmap/nmap --privileged -sS -oN nmap_scan.txt 127.0.1.1
+Nmap scan report for gta.gta (127.0.1.1)
+Host is up (0.0000040s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT   STATE SERVICE
+22/tcp open  ssh
+
+# Nmap done at Sat Aug  8 17:26:58 2026 -- 1 IP address (1 host up) scanned in 0.17 seconds
