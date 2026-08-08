@@ -1,5 +1,0 @@
-# Check all listening TCP/UDP ports and their associated PIDs/processes
-sudo ss -tulpn > port_audit_ss.txt
-
-# Audit open network sockets held by active processes
-sudo lsof -i -P -n >> port_audit_ss.txt

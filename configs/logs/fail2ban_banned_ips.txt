@@ -1,1 +1,0 @@
-sudo fail2ban-client status sshd > fail2ban_banned_ips.txt

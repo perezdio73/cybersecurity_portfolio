@@ -1,7 +1,0 @@
-# Hardened SSH Config Parameters (/etc/ssh/sshd_config)
-Port 2222                          # Changed default SSH port to reduce automated noise
-PermitRootLogin no                 # Disabled direct root login over SSH
-PasswordAuthentication no          # Enforced SSH key-based authentication only
-MaxAuthTries 3                     # Drop connection after 3 failed attempts
-PubkeyAuthentication yes           # Explicitly allow public key logins
-X11Forwarding no                   # Disabled graphical forwarding
