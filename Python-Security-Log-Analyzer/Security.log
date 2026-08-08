@@ -1,0 +1,7 @@
+Aug 08 18:01:12 kali sshd[1201]: Failed password for admin from 192.168.1.50 port 44122 ssh2
+Aug 08 18:01:18 kali sshd[1202]: Failed password for admin from 192.168.1.50 port 44125 ssh2
+Aug 08 18:01:24 kali sshd[1203]: Failed password for admin from 192.168.1.50 port 44128 ssh2
+Aug 08 18:01:31 kali sshd[1204]: Failed password for admin from 192.168.1.50 port 44131 ssh2
+Aug 08 18:02:04 kali sshd[1205]: Accepted password for kali from 192.168.1.25 port 44210 ssh2
+Aug 08 18:03:15 kali sshd[1206]: Failed password for test from 10.0.0.25 port 45001 ssh2
+Aug 08 18:03:22 kali sshd[1207]: Failed password for test from 10.0.0.25 port 45005 ssh2
