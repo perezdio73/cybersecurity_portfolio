@@ -1,0 +1,4 @@
+lo               UNKNOWN        127.0.0.1/8 ::1/128 
+eth0             UP             192.168.1.185/24 2600:4040:a421:b500:9bc:3992:79e5:73dd/64 2600:4040:a421:b500:a00:27ff:fea2:6cee/64 fe80::a00:27ff:fea2:6cee/64 
+default via 192.168.1.1 dev eth0 proto dhcp src 192.168.1.185 metric 100 
+192.168.1.0/24 dev eth0 proto kernel scope link src 192.168.1.185 metric 100 
